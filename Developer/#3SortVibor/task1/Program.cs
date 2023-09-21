@@ -34,7 +34,7 @@ int[] SortViber(int[] array)
         for (int j = i; j < array.Length; j++)
         {
             if (array[j] < array[indexMin])
-                indexMin = j;
+            indexMin = j;
         }
         if(array[indexMin] == array[i])
         continue;
@@ -52,4 +52,4 @@ int n = int.Parse(Console.ReadLine()!);
 int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"Начальный массив: [{String.Join(", ", array)}]");
-Console.WriteLine($"Начальный массив: [{String.Join(", ", SortViber(array))}]");
+Console.WriteLine($"Неотсортированный массив: [{String.Join(", ", SortViber(array))}]");
